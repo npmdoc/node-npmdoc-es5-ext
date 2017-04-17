@@ -1,0 +1,3305 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/medikoo/es5-ext#readme">es5-ext (v0.10.15)</a>
+</h1>
+<h4>ECMAScript extensions and shims</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext">module es5-ext</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>array</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>boolean</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>date</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>error</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>function</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>iterable</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>json</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>math</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>number</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>object</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>regExp</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">es5-ext.</span>string</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.array">module es5-ext.array</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.array.from">
+            function <span class="apidocSignatureSpan">es5-ext.array.</span>from
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.array.generate">
+            function <span class="apidocSignatureSpan">es5-ext.array.</span>generate
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.array.isPlainArray">
+            function <span class="apidocSignatureSpan">es5-ext.array.</span>isPlainArray
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.array.of">
+            function <span class="apidocSignatureSpan">es5-ext.array.</span>of
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.array.toArray">
+            function <span class="apidocSignatureSpan">es5-ext.array.</span>toArray
+            <span class="apidocSignatureSpan">(arrayLike)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.array.validArray">
+            function <span class="apidocSignatureSpan">es5-ext.array.</span>validArray
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.boolean">module es5-ext.boolean</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.boolean.isBoolean">
+            function <span class="apidocSignatureSpan">es5-ext.boolean.</span>isBoolean
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.date">module es5-ext.date</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.date.isDate">
+            function <span class="apidocSignatureSpan">es5-ext.date.</span>isDate
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.date.validDate">
+            function <span class="apidocSignatureSpan">es5-ext.date.</span>validDate
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.error">module es5-ext.error</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.error.custom">
+            function <span class="apidocSignatureSpan">es5-ext.error.</span>custom
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.error.isError">
+            function <span class="apidocSignatureSpan">es5-ext.error.</span>isError
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.error.validError">
+            function <span class="apidocSignatureSpan">es5-ext.error.</span>validError
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.function">module es5-ext.function</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.function.constant">
+            function <span class="apidocSignatureSpan">es5-ext.function.</span>constant
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.function.identity">
+            function <span class="apidocSignatureSpan">es5-ext.function.</span>identity
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.function.invoke">
+            function <span class="apidocSignatureSpan">es5-ext.function.</span>invoke
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.function.isArguments">
+            function <span class="apidocSignatureSpan">es5-ext.function.</span>isArguments
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.function.isFunction">
+            function <span class="apidocSignatureSpan">es5-ext.function.</span>isFunction
+            <span class="apidocSignatureSpan">(f)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.function.noop">
+            function <span class="apidocSignatureSpan">es5-ext.function.</span>noop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.function.pluck">
+            function <span class="apidocSignatureSpan">es5-ext.function.</span>pluck
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.function.validFunction">
+            function <span class="apidocSignatureSpan">es5-ext.function.</span>validFunction
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.iterable">module es5-ext.iterable</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.iterable.forEach">
+            function <span class="apidocSignatureSpan">es5-ext.iterable.</span>forEach
+            <span class="apidocSignatureSpan">(target, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.iterable.is">
+            function <span class="apidocSignatureSpan">es5-ext.iterable.</span>is
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.iterable.validate">
+            function <span class="apidocSignatureSpan">es5-ext.iterable.</span>validate
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.iterable.validateObject">
+            function <span class="apidocSignatureSpan">es5-ext.iterable.</span>validateObject
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.json">module es5-ext.json</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.json.safeStringify">
+            function <span class="apidocSignatureSpan">es5-ext.json.</span>safeStringify
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.math">module es5-ext.math</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.acosh">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>acosh
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.asinh">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>asinh
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.atanh">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>atanh
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.cbrt">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>cbrt
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.clz32">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>clz32
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.cosh">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>cosh
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.expm1">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>expm1
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.fround">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>fround
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.hypot">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>hypot
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.imul">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>imul
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.log10">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>log10
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.log1p">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>log1p
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.log2">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>log2
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.sign">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>sign
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.sinh">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>sinh
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.tanh">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>tanh
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.math.trunc">
+            function <span class="apidocSignatureSpan">es5-ext.math.</span>trunc
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.number">module es5-ext.number</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.number.isFinite">
+            function <span class="apidocSignatureSpan">es5-ext.number.</span>isFinite
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.number.isInteger">
+            function <span class="apidocSignatureSpan">es5-ext.number.</span>isInteger
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.number.isNaN">
+            function <span class="apidocSignatureSpan">es5-ext.number.</span>isNaN
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.number.isNatural">
+            function <span class="apidocSignatureSpan">es5-ext.number.</span>isNatural
+            <span class="apidocSignatureSpan">(num)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.number.isNumber">
+            function <span class="apidocSignatureSpan">es5-ext.number.</span>isNumber
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.number.isSafeInteger">
+            function <span class="apidocSignatureSpan">es5-ext.number.</span>isSafeInteger
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.number.toInteger">
+            function <span class="apidocSignatureSpan">es5-ext.number.</span>toInteger
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.number.toPosInteger">
+            function <span class="apidocSignatureSpan">es5-ext.number.</span>toPosInteger
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.number.toUint32">
+            function <span class="apidocSignatureSpan">es5-ext.number.</span>toUint32
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">es5-ext.number.</span>EPSILON</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">es5-ext.number.</span>MAX_SAFE_INTEGER</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">es5-ext.number.</span>MIN_SAFE_INTEGER</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.object">module es5-ext.object</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.assign">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>assign
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.clear">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>clear
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.compact">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>compact
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.compare">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>compare
+            <span class="apidocSignatureSpan">(a, b)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.copy">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>copy
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.copyDeep">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>copyDeep
+            <span class="apidocSignatureSpan">(source)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.count">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>count
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.create">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>create
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.ensureNaturalNumber">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>ensureNaturalNumber
+            <span class="apidocSignatureSpan">(arg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.ensureNaturalNumberValue">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>ensureNaturalNumberValue
+            <span class="apidocSignatureSpan">(arg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.eq">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>eq
+            <span class="apidocSignatureSpan">(x, y)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.every">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>every
+            <span class="apidocSignatureSpan">(obj, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.filter">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>filter
+            <span class="apidocSignatureSpan">(obj, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.find">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>find
+            <span class="apidocSignatureSpan">(obj, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.findKey">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>findKey
+            <span class="apidocSignatureSpan">(obj, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.firstKey">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>firstKey
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.flatten">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>flatten
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.forEach">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>forEach
+            <span class="apidocSignatureSpan">(obj, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.getPropertyNames">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>getPropertyNames
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.is">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>is
+            <span class="apidocSignatureSpan">(x, y)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.isArrayLike">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>isArrayLike
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.isCallable">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>isCallable
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.isCopy">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>isCopy
+            <span class="apidocSignatureSpan">(a, b)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.isCopyDeep">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>isCopyDeep
+            <span class="apidocSignatureSpan">(a, b)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.isEmpty">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>isEmpty
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.isNumberValue">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>isNumberValue
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.isObject">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>isObject
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.isPlainObject">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>isPlainObject
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.isValue">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>isValue
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.keyOf">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>keyOf
+            <span class="apidocSignatureSpan">(obj, searchValue)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.keys">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>keys
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.map">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>map
+            <span class="apidocSignatureSpan">(obj, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.mapKeys">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>mapKeys
+            <span class="apidocSignatureSpan">(obj, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.mixin">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>mixin
+            <span class="apidocSignatureSpan">(target, source)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.mixinPrototypes">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>mixinPrototypes
+            <span class="apidocSignatureSpan">(target, source)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.normalizeOptions">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>normalizeOptions
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.primitiveSet">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>primitiveSet
+            <span class="apidocSignatureSpan">(arg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.safeTraverse">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>safeTraverse
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.serialize">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>serialize
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.setPrototypeOf">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>setPrototypeOf
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.some">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>some
+            <span class="apidocSignatureSpan">(obj, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.toArray">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>toArray
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.unserialize">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>unserialize
+            <span class="apidocSignatureSpan">(code)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.validCallable">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>validCallable
+            <span class="apidocSignatureSpan">(fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.validObject">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>validObject
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.validValue">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>validValue
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.validateArrayLike">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>validateArrayLike
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.validateArrayLikeObject">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>validateArrayLikeObject
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.validateStringifiable">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>validateStringifiable
+            <span class="apidocSignatureSpan">(stringifiable)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.object.validateStringifiableValue">
+            function <span class="apidocSignatureSpan">es5-ext.object.</span>validateStringifiableValue
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.regExp">module es5-ext.regExp</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.regExp.escape">
+            function <span class="apidocSignatureSpan">es5-ext.regExp.</span>escape
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.regExp.isRegExp">
+            function <span class="apidocSignatureSpan">es5-ext.regExp.</span>isRegExp
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.regExp.validRegExp">
+            function <span class="apidocSignatureSpan">es5-ext.regExp.</span>validRegExp
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.es5-ext.string">module es5-ext.string</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.string.formatMethod">
+            function <span class="apidocSignatureSpan">es5-ext.string.</span>formatMethod
+            <span class="apidocSignatureSpan">(fmap)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.string.fromCodePoint">
+            function <span class="apidocSignatureSpan">es5-ext.string.</span>fromCodePoint
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.string.isString">
+            function <span class="apidocSignatureSpan">es5-ext.string.</span>isString
+            <span class="apidocSignatureSpan">(x)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.string.randomUniq">
+            function <span class="apidocSignatureSpan">es5-ext.string.</span>randomUniq
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.es5-ext.string.raw">
+            function <span class="apidocSignatureSpan">es5-ext.string.</span>raw
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext" id="apidoc.module.es5-ext">module es5-ext</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.array" id="apidoc.module.es5-ext.array">module es5-ext.array</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.array.from" id="apidoc.element.es5-ext.array.from">
+        function <span class="apidocSignatureSpan">es5-ext.array.</span>from
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function from() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### ECMAScript 6 features
+
+You can force ES6 features to be implemented in your environment, e.g. following will assign `from` function to `Array` (only if
+ it's not implemented already).
+
+```javascript
+require('es5-ext/array/from/implement');
+Array.<span class="apidocCodeKeywordSpan">from</span>('foo'); // ['f', 'o', 'o']
+```
+
+You can also access shims directly, without fixing native objects. Following will return native `Array.from` if it's available
+ and fallback to shim if it's not.
+
+```javascript
+var aFrom = require('es5-ext/array/from');
+aFrom('foo'); // ['f', 'o', 'o']
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.array.generate" id="apidoc.element.es5-ext.array.generate">
+        function <span class="apidocSignatureSpan">es5-ext.array.</span>generate
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generate = function (length) {
+	var arr, l;
+	length = toPosInt(value(length));
+	if (length === 0) return [];
+
+	arr = (arguments.length &lt; 2) ? [undefined] :
+			slice.call(arguments, 1, 1 + length);
+
+	while ((l = arr.length) &lt; length) {
+		arr = arr.concat(arr.slice(0, length - l));
+	}
+	return arr;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.array.isPlainArray" id="apidoc.element.es5-ext.array.isPlainArray">
+        function <span class="apidocSignatureSpan">es5-ext.array.</span>isPlainArray
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isPlainArray = function (obj) {
+	var proto;
+	if (!obj || !isArray(obj)) return false;
+	proto = getPrototypeOf(obj);
+	if (!isArray(proto)) return false;
+	return !isArray(getPrototypeOf(proto));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.array.of" id="apidoc.element.es5-ext.array.of">
+        function <span class="apidocSignatureSpan">es5-ext.array.</span>of
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function of() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.array.toArray" id="apidoc.element.es5-ext.array.toArray">
+        function <span class="apidocSignatureSpan">es5-ext.array.</span>toArray
+        <span class="apidocSignatureSpan">(arrayLike)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toArray = function (arrayLike) {
+	return isArray(arrayLike) ? arrayLike : from(arrayLike);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.array.validArray" id="apidoc.element.es5-ext.array.validArray">
+        function <span class="apidocSignatureSpan">es5-ext.array.</span>validArray
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validArray = function (value) {
+	if (isArray(value)) return value;
+	throw new TypeError(value + " is not an array");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.boolean" id="apidoc.module.es5-ext.boolean">module es5-ext.boolean</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.boolean.isBoolean" id="apidoc.element.es5-ext.boolean.isBoolean">
+        function <span class="apidocSignatureSpan">es5-ext.boolean.</span>isBoolean
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isBoolean = function (x) {
+	return (typeof x === 'boolean') || ((typeof x === 'object') &amp;&amp;
+		((x instanceof Boolean) || (toString.call(x) === id)));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.date" id="apidoc.module.es5-ext.date">module es5-ext.date</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.date.isDate" id="apidoc.element.es5-ext.date.isDate">
+        function <span class="apidocSignatureSpan">es5-ext.date.</span>isDate
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isDate = function (x) {
+	return (x &amp;&amp; ((x instanceof Date) || (toString.call(x) === id))) || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.date.validDate" id="apidoc.element.es5-ext.date.validDate">
+        function <span class="apidocSignatureSpan">es5-ext.date.</span>validDate
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validDate = function (x) {
+	if (!isDate(x) || isNaN(x)) throw new TypeError(x + " is not valid Date object");
+	return x;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.error" id="apidoc.module.es5-ext.error">module es5-ext.error</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.error.custom" id="apidoc.element.es5-ext.error.custom">
+        function <span class="apidocSignatureSpan">es5-ext.error.</span>custom
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">custom = function (message) {
+	var err = new Error(message), code = arguments[1], ext = arguments[2];
+	if (ext == null) {
+		if (code &amp;&amp; (typeof code === 'object')) {
+			ext = code;
+			code = null;
+		}
+	}
+	if (ext != null) assign(err, ext);
+	if (code != null) err.code = String(code);
+	if (captureStackTrace) captureStackTrace(err, exports);
+	return err;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.error.isError" id="apidoc.element.es5-ext.error.isError">
+        function <span class="apidocSignatureSpan">es5-ext.error.</span>isError
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isError = function (x) {
+	return (x &amp;&amp; ((x instanceof Error) || (toString.call(x)) === id)) || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.error.validError" id="apidoc.element.es5-ext.error.validError">
+        function <span class="apidocSignatureSpan">es5-ext.error.</span>validError
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validError = function (x) {
+	if (!isError(x)) throw new TypeError(x + " is not an Error object");
+	return x;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.function" id="apidoc.module.es5-ext.function">module es5-ext.function</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.function.constant" id="apidoc.element.es5-ext.function.constant">
+        function <span class="apidocSignatureSpan">es5-ext.function.</span>constant
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constant = function (x) {
+	return function () { return x; };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.function.identity" id="apidoc.element.es5-ext.function.identity">
+        function <span class="apidocSignatureSpan">es5-ext.function.</span>identity
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">identity = function (x) { return x; }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.function.invoke" id="apidoc.element.es5-ext.function.invoke">
+        function <span class="apidocSignatureSpan">es5-ext.function.</span>invoke
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">invoke = function (name) {
+	var args = slice.call(arguments, 1), isFn = isCallable(name);
+	return function (obj) {
+		value(obj);
+		return apply.call(isFn ? name : obj[name], obj,
+			args.concat(slice.call(arguments, 1)));
+	};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.function.isArguments" id="apidoc.element.es5-ext.function.isArguments">
+        function <span class="apidocSignatureSpan">es5-ext.function.</span>isArguments
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isArguments = function (x) { return (toString.call(x) === id); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.function.isFunction" id="apidoc.element.es5-ext.function.isFunction">
+        function <span class="apidocSignatureSpan">es5-ext.function.</span>isFunction
+        <span class="apidocSignatureSpan">(f)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isFunction = function (f) {
+	return (typeof f === "function") &amp;&amp; (toString.call(f) === id);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.function.noop" id="apidoc.element.es5-ext.function.noop">
+        function <span class="apidocSignatureSpan">es5-ext.function.</span>noop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">noop = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.function.pluck" id="apidoc.element.es5-ext.function.pluck">
+        function <span class="apidocSignatureSpan">es5-ext.function.</span>pluck
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pluck = function (name) {
+	return function (o) { return value(o)[name]; };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.function.validFunction" id="apidoc.element.es5-ext.function.validFunction">
+        function <span class="apidocSignatureSpan">es5-ext.function.</span>validFunction
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validFunction = function (x) {
+	if (!isFunction(x)) throw new TypeError(x + " is not a function");
+	return x;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.iterable" id="apidoc.module.es5-ext.iterable">module es5-ext.iterable</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.iterable.forEach" id="apidoc.element.es5-ext.iterable.forEach">
+        function <span class="apidocSignatureSpan">es5-ext.iterable.</span>forEach
+        <span class="apidocSignatureSpan">(target, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forEach = function (target, cb) {
+	if (isIterable(iterable(target))) forOf(target, cb, arguments[2]);
+	else forEach.call(target, cb, arguments[2]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.iterable.is" id="apidoc.element.es5-ext.iterable.is">
+        function <span class="apidocSignatureSpan">es5-ext.iterable.</span>is
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">is = function (x) {
+	if (x == null) return false;
+	if (typeof x[iteratorSymbol] === 'function') return true;
+	return isArrayLike(x);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.iterable.validate" id="apidoc.element.es5-ext.iterable.validate">
+        function <span class="apidocSignatureSpan">es5-ext.iterable.</span>validate
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validate = function (x) {
+	if (is(x)) return x;
+	throw new TypeError(x + " is not an iterable or array-like");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.iterable.validateObject" id="apidoc.element.es5-ext.iterable.validateObject">
+        function <span class="apidocSignatureSpan">es5-ext.iterable.</span>validateObject
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validateObject = function (x) {
+	if (is(x) &amp;&amp; isObject(x)) return x;
+	throw new TypeError(x + " is not an iterable or array-like object");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.json" id="apidoc.module.es5-ext.json">module es5-ext.json</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.json.safeStringify" id="apidoc.element.es5-ext.json.safeStringify">
+        function <span class="apidocSignatureSpan">es5-ext.json.</span>safeStringify
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function self(value) {
+	var replacer = arguments[1], space = arguments[2];
+	try {
+		return stringify(value, replacer, space);
+	} catch (e) {
+		if (!isObject(value)) return;
+		if (typeof value.toJSON === 'function') return;
+		if (isArray(value)) {
+			return '[' +
+				compact.call(value.map(function (value) { return self(value, replacer, space); })) + ']';
+		}
+		return '{' + compact.call(toArray(value, function (value, key) {
+			value = self(value, replacer, space);
+			if (!value) return;
+			return stringify(key) + ':' + value;
+		})).join(',') + '}';
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.math" id="apidoc.module.es5-ext.math">module es5-ext.math</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.acosh" id="apidoc.element.es5-ext.math.acosh">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>acosh
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function acosh() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.asinh" id="apidoc.element.es5-ext.math.asinh">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>asinh
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function asinh() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.atanh" id="apidoc.element.es5-ext.math.atanh">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>atanh
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function atanh() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.cbrt" id="apidoc.element.es5-ext.math.cbrt">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>cbrt
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cbrt = function (x) {
+	if (isNaN(x)) return NaN;
+	x = Number(x);
+	if (x === 0) return x;
+	if (!isFinite(x)) return x;
+	if (x &lt; 0) return -pow(-x, 1 / 3);
+	return pow(x, 1 / 3);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.clz32" id="apidoc.element.es5-ext.math.clz32">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>clz32
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function clz32() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.cosh" id="apidoc.element.es5-ext.math.cosh">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>cosh
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cosh() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.expm1" id="apidoc.element.es5-ext.math.expm1">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>expm1
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function expm1() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.fround" id="apidoc.element.es5-ext.math.fround">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>fround
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fround() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.hypot" id="apidoc.element.es5-ext.math.hypot">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>hypot
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function hypot() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.imul" id="apidoc.element.es5-ext.math.imul">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>imul
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function imul() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.log10" id="apidoc.element.es5-ext.math.log10">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>log10
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function log10() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.log1p" id="apidoc.element.es5-ext.math.log1p">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>log1p
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function log1p() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.log2" id="apidoc.element.es5-ext.math.log2">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>log2
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function log2() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.sign" id="apidoc.element.es5-ext.math.sign">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>sign
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sign() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.sinh" id="apidoc.element.es5-ext.math.sinh">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>sinh
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function sinh() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.tanh" id="apidoc.element.es5-ext.math.tanh">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>tanh
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tanh() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.math.trunc" id="apidoc.element.es5-ext.math.trunc">
+        function <span class="apidocSignatureSpan">es5-ext.math.</span>trunc
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function trunc() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.number" id="apidoc.module.es5-ext.number">module es5-ext.number</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.number.isFinite" id="apidoc.element.es5-ext.number.isFinite">
+        function <span class="apidocSignatureSpan">es5-ext.number.</span>isFinite
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isFinite() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.number.isInteger" id="apidoc.element.es5-ext.number.isInteger">
+        function <span class="apidocSignatureSpan">es5-ext.number.</span>isInteger
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isInteger() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.number.isNaN" id="apidoc.element.es5-ext.number.isNaN">
+        function <span class="apidocSignatureSpan">es5-ext.number.</span>isNaN
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isNaN() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.number.isNatural" id="apidoc.element.es5-ext.number.isNatural">
+        function <span class="apidocSignatureSpan">es5-ext.number.</span>isNatural
+        <span class="apidocSignatureSpan">(num)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isNatural = function (num) { return isInteger(num) &amp;&amp; (num &gt;= 0); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.number.isNumber" id="apidoc.element.es5-ext.number.isNumber">
+        function <span class="apidocSignatureSpan">es5-ext.number.</span>isNumber
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isNumber = function (x) {
+	return ((typeof x === 'number') ||
+		((x instanceof Number) ||
+			((typeof x === 'object') &amp;&amp; (toString.call(x) === id))));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.number.isSafeInteger" id="apidoc.element.es5-ext.number.isSafeInteger">
+        function <span class="apidocSignatureSpan">es5-ext.number.</span>isSafeInteger
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSafeInteger() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.number.toInteger" id="apidoc.element.es5-ext.number.toInteger">
+        function <span class="apidocSignatureSpan">es5-ext.number.</span>toInteger
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toInteger = function (value) {
+	if (isNaN(value)) return 0;
+	value = Number(value);
+	if ((value === 0) || !isFinite(value)) return value;
+	return sign(value) * floor(abs(value));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.number.toPosInteger" id="apidoc.element.es5-ext.number.toPosInteger">
+        function <span class="apidocSignatureSpan">es5-ext.number.</span>toPosInteger
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toPosInteger = function (value) { return max(0, toInteger(value)); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.number.toUint32" id="apidoc.element.es5-ext.number.toUint32">
+        function <span class="apidocSignatureSpan">es5-ext.number.</span>toUint32
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toUint32 = function (value) { return value &gt;&gt;&gt; 0; }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.object" id="apidoc.module.es5-ext.object">module es5-ext.object</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.assign" id="apidoc.element.es5-ext.object.assign">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>assign
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function assign() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.clear" id="apidoc.element.es5-ext.object.clear">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>clear
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">clear = function (obj) {
+	var error;
+	keys(obj).forEach(function (key) {
+		try {
+			delete this[key];
+		} catch (e) {
+			if (!error) error = e;
+		}
+	}, obj);
+	if (error !== undefined) throw error;
+	return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### Array Prototype extensions
+
+#### arr.binarySearch(compareFn) _(es5-ext/array/#/binary-search)_
+
+In __sorted__ list search for index of item for which _compareFn_ returns value closest to _0_.
+It's variant of binary search algorithm
+
+#### arr.<span class="apidocCodeKeywordSpan">clear</span>() _(es5-ext/array/#/clear)_
+
+Clears the array
+
+#### arr.compact() _(es5-ext/array/#/compact)_
+
+Returns a copy of the context with all non-values (`null` or `undefined`) removed.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.compact" id="apidoc.element.es5-ext.object.compact">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>compact
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compact = function (obj) {
+	return filter(obj, function (val) { return val != null; });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+In __sorted__ list search for index of item for which _compareFn_ returns value closest to _0_.
+It's variant of binary search algorithm
+
+#### arr.clear() _(es5-ext/array/#/clear)_
+
+Clears the array
+
+#### arr.<span class="apidocCodeKeywordSpan">compact</span>() _(es5-ext/array/#/compact)_
+
+Returns a copy of the context with all non-values (`null` or `undefined`) removed.
+
+#### arr.concat() _(es5-ext/array/#/concat)_
+
+[_Updated with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.prototype.concat).
+ES6's version of `concat`. Supports `isConcatSpreadable` symbol, and returns array of same type as the context.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.compare" id="apidoc.element.es5-ext.object.compare">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>compare
+        <span class="apidocSignatureSpan">(a, b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compare = function (a, b) {
+	if (a === b) return 0; // Same
+
+	a = resolve(a);
+	b = resolve(b);
+	if (a == b) return typeMap[typeof a] - typeMap[typeof b]; //jslint: ignore
+	if (a == null) return -1;
+	if (b == null) return 1;
+	if ((typeof a === 'string') || (typeof b === 'string')) {
+		return strCompare.call(a, b);
+	}
+	if ((a !== a) &amp;&amp; (b !== b)) return 0; //jslint: ignore
+	return Number(a) - Number(b);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.copy" id="apidoc.element.es5-ext.object.copy">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>copy
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">copy = function (obj) {
+	var copy = Object(value(obj));
+	if (copy !== obj) return copy;
+	return assign({}, obj);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### validDate(x) _(es5-ext/date/valid-date)_
+
+If given object is not date throw TypeError in other case return it.
+
+### Date Prototype extensions
+
+#### date.<span class="apidocCodeKeywordSpan">copy</span>(date) _(es5-ext/date/#/copy)_
+
+Returns a copy of the date object
+
+#### date.daysInMonth() _(es5-ext/date/#/days-in-month)_
+
+Returns number of days of date's month
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.copyDeep" id="apidoc.element.es5-ext.object.copyDeep">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>copyDeep
+        <span class="apidocSignatureSpan">(source)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">copyDeep = function (source) {
+	var obj = Object(value(source));
+	if (obj !== source) return obj;
+	return copy.call([[], []], obj);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.count" id="apidoc.element.es5-ext.object.count">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>count
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">count = function (obj) { return keys(obj).length; }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.create" id="apidoc.element.es5-ext.object.create">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>create
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function create() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.ensureNaturalNumber" id="apidoc.element.es5-ext.object.ensureNaturalNumber">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>ensureNaturalNumber
+        <span class="apidocSignatureSpan">(arg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ensureNaturalNumber = function (arg) {
+	var num = Number(arg);
+	if (!isNatural(num)) throw new TypeError(arg + " is not a natural number");
+	return num;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.ensureNaturalNumberValue" id="apidoc.element.es5-ext.object.ensureNaturalNumberValue">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>ensureNaturalNumberValue
+        <span class="apidocSignatureSpan">(arg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ensureNaturalNumberValue = function (arg) {
+	if (arg == null) throw new TypeError(arg + " is not a natural number");
+	return ensure(arg);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.eq" id="apidoc.element.es5-ext.object.eq">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>eq
+        <span class="apidocSignatureSpan">(x, y)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">eq = function (x, y) {
+	return ((x === y) || ((x !== x) &amp;&amp; (y !== y))); //jslint: ignore
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.every" id="apidoc.element.es5-ext.object.every">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>every
+        <span class="apidocSignatureSpan">(obj, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">every = function (obj, cb) {
+		var list, thisArg = arguments[2], compareFn = arguments[3];
+		obj = Object(value(obj));
+		callable(cb);
+
+		list = keys(obj);
+		if (compareFn) {
+			list.sort((typeof compareFn === 'function') ? bind.call(compareFn, obj) : undefined);
+		}
+		if (typeof method !== 'function') method = list[method];
+		return call.call(method, list, function (key, index) {
+			if (!propertyIsEnumerable.call(obj, key)) return defVal;
+			return call.call(cb, thisArg, obj[key], key, obj, index);
+		});
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.filter" id="apidoc.element.es5-ext.object.filter">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>filter
+        <span class="apidocSignatureSpan">(obj, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filter = function (obj, cb) {
+	var o = {}, thisArg = arguments[2];
+	callable(cb);
+	forEach(obj, function (value, key, obj, index) {
+		if (call.call(cb, thisArg, value, key, obj, index)) o[key] = obj[key];
+	});
+	return o;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Returns the array of elements that are found only in one of the lists (either context list or list provided in arguments).
+
+#### arr.fill(value[, start, end]) _(es5-ext/array/#/fill)_
+
+[_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.fill).
+
+#### arr.<span class="apidocCodeKeywordSpan">filter</span>(callback[, thisArg]) _(es5-ext/array/#/filter)_
+
+[_Updated with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.filter).
+ES6's version of `filter`, returns array of same type as the context.
+
+#### arr.find(predicate[, thisArg]) _(es5-ext/array/#/find)_
+
+[_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.find).
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.find" id="apidoc.element.es5-ext.object.find">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>find
+        <span class="apidocSignatureSpan">(obj, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">find = function (obj, cb) {
+	var key = findKey.apply(this, arguments);
+	return (key == null) ? key : obj[key];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+[_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.fill).
+
+#### arr.filter(callback[, thisArg]) _(es5-ext/array/#/filter)_
+
+[_Updated with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.filter).
+ES6's version of `filter`, returns array of same type as the context.
+
+#### arr.<span class="apidocCodeKeywordSpan">find</span>(predicate[, thisArg]) _(es5-ext/array/#/find)_
+
+[_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.find).
+Return first element for which given function returns true
+
+#### arr.findIndex(predicate[, thisArg]) _(es5-ext/array/#/find-index)_
+
+[_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.findindex).
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.findKey" id="apidoc.element.es5-ext.object.findKey">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>findKey
+        <span class="apidocSignatureSpan">(obj, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">findKey = function (obj, cb) {
+		var list, thisArg = arguments[2], compareFn = arguments[3];
+		obj = Object(value(obj));
+		callable(cb);
+
+		list = keys(obj);
+		if (compareFn) {
+			list.sort((typeof compareFn === 'function') ? bind.call(compareFn, obj) : undefined);
+		}
+		if (typeof method !== 'function') method = list[method];
+		return call.call(method, list, function (key, index) {
+			if (!propertyIsEnumerable.call(obj, key)) return defVal;
+			return call.call(cb, thisArg, obj[key], key, obj, index);
+		});
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.firstKey" id="apidoc.element.es5-ext.object.firstKey">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>firstKey
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">firstKey = function (obj) {
+	var i;
+	value(obj);
+	for (i in obj) {
+		if (propertyIsEnumerable.call(obj, i)) return i;
+	}
+	return null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.flatten" id="apidoc.element.es5-ext.object.flatten">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>flatten
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">flatten = function (obj) {
+	var flattened = {};
+	forEach(obj, process, flattened);
+	return flattened;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```javascript
+var util = {};
+util.partial = call.bind(require('es5-ext/function/#/partial'));
+util.flatten = call.bind(require('es5-ext/array/#/flatten'));
+util.startsWith = call.bind(require('es5-ext/string/#/starts-with'));
+
+util.<span class="apidocCodeKeywordSpan">flatten</span>([1, [2, [3, 4]]]); // [1, 2, 3, 4]
+```
+
+As with native ones most methods are generic and can be run on any type of object.
+
+## API
+
+### Global extensions
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.forEach" id="apidoc.element.es5-ext.object.forEach">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>forEach
+        <span class="apidocSignatureSpan">(obj, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forEach = function (obj, cb) {
+		var list, thisArg = arguments[2], compareFn = arguments[3];
+		obj = Object(value(obj));
+		callable(cb);
+
+		list = keys(obj);
+		if (compareFn) {
+			list.sort((typeof compareFn === 'function') ? bind.call(compareFn, obj) : undefined);
+		}
+		if (typeof method !== 'function') method = list[method];
+		return call.call(method, list, function (key, index) {
+			if (!propertyIsEnumerable.call(obj, key)) return defVal;
+			return call.call(cb, thisArg, obj[key], key, obj, index);
+		});
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.getPropertyNames" id="apidoc.element.es5-ext.object.getPropertyNames">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>getPropertyNames
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPropertyNames = function (obj) {
+	var keys;
+	obj = Object(value(obj));
+	keys = getOwnPropertyNames(obj);
+	while ((obj = getPrototypeOf(obj))) {
+		push.apply(keys, getOwnPropertyNames(obj));
+	}
+	return uniq.call(keys);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.is" id="apidoc.element.es5-ext.object.is">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>is
+        <span class="apidocSignatureSpan">(x, y)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">is = function (x, y) {
+	return (x === y) ?
+			((x !== 0) || ((1 / x) === (1 / y))) :
+			((x !== x) &amp;&amp; (y !== y)); //jslint: ignore
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.isArrayLike" id="apidoc.element.es5-ext.object.isArrayLike">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>isArrayLike
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isArrayLike = function (x) {
+	return ((x != null) &amp;&amp; (typeof x.length === 'number') &amp;&amp;
+
+		// Just checking ((typeof x === 'object') &amp;&amp; (typeof x !== 'function'))
+		// won't work right for some cases, e.g.:
+		// type of instance of NodeList in Safari is a 'function'
+
+		((isObject(x) &amp;&amp; !isFunction(x)) || (typeof x === "string"))) || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.isCallable" id="apidoc.element.es5-ext.object.isCallable">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>isCallable
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isCallable = function (obj) { return typeof obj === 'function'; }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.isCopy" id="apidoc.element.es5-ext.object.isCopy">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>isCopy
+        <span class="apidocSignatureSpan">(a, b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isCopy = function (a, b) {
+	var k1, k2;
+
+	if (eq(value(a), value(b))) return true;
+
+	a = Object(a);
+	b = Object(b);
+
+	k1 = keys(a);
+	k2 = keys(b);
+	if (k1.length !== k2.length) return false;
+	return k1.every(function (key) {
+		if (!propertyIsEnumerable.call(b, key)) return false;
+		return eq(a[key], b[key]);
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Returns array of all indexes of given value
+
+#### arr.intersection([â€¦lists]) _(es5-ext/array/#/intersection)_
+
+Computes the array of values that are the intersection of all lists (context list and lists given in arguments)
+
+#### arr.<span class="apidocCodeKeywordSpan">isCopy</span>(other) _(es5-ext/array/#/is-copy)_
+
+Returns true if both context and _other_ lists have same content
+
+#### arr.isUniq() _(es5-ext/array/#/is-uniq)_
+
+Returns true if all values in array are unique
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.isCopyDeep" id="apidoc.element.es5-ext.object.isCopyDeep">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>isCopyDeep
+        <span class="apidocSignatureSpan">(a, b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isCopyDeep = function (a, b) {
+	if (eq(value(a), value(b))) return true;
+	return eqVal(Object(a), Object(b), [[], []]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.isEmpty" id="apidoc.element.es5-ext.object.isEmpty">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>isEmpty
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isEmpty = function (obj) {
+	var i;
+	value(obj);
+	for (i in obj) { //jslint: ignore
+		if (propertyIsEnumerable.call(obj, i)) return false;
+	}
+	return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.isNumberValue" id="apidoc.element.es5-ext.object.isNumberValue">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>isNumberValue
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isNumberValue = function (value) { return (value != null) &amp;&amp; !isNaN(value); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.isObject" id="apidoc.element.es5-ext.object.isObject">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>isObject
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isObject = function (x) {
+	return ((x != null) &amp;&amp; map[typeof x]) || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.isPlainObject" id="apidoc.element.es5-ext.object.isPlainObject">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>isPlainObject
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isPlainObject = function (value) {
+	var proto, constructor;
+	if (!value || (typeof value !== 'object') || (toString.call(value) !== id)) {
+		return false;
+	}
+	proto = getPrototypeOf(value);
+	if (proto === null) {
+		constructor = value.constructor;
+		if (typeof constructor !== 'function') return true;
+		return (constructor.prototype !== value);
+	}
+	return (proto === prototype) || (getPrototypeOf(proto) === null);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.isValue" id="apidoc.element.es5-ext.object.isValue">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>isValue
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isValue = function (val) { return ((val !== _undefined) &amp;&amp; (val !== null)); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.keyOf" id="apidoc.element.es5-ext.object.keyOf">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>keyOf
+        <span class="apidocSignatureSpan">(obj, searchValue)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">keyOf = function (obj, searchValue) {
+	var r;
+	return some(obj, function (value, name) {
+		if (eq(value, searchValue)) {
+			r = name;
+			return true;
+		}
+		return false;
+	}) ? r : null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.keys" id="apidoc.element.es5-ext.object.keys">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>keys
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function keys() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Returns true if both context and _other_ lists have same content
+
+#### arr.isUniq() _(es5-ext/array/#/is-uniq)_
+
+Returns true if all values in array are unique
+
+#### arr.<span class="apidocCodeKeywordSpan">keys</span>() _(es5-ext/array/#/keys)_
+
+[_Introduced with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.prototype.keys).
+Returns iterator object, which traverses all array indexes.
+
+#### arr.last() _(es5-ext/array/#/last)_
+
+Returns value of last defined index
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.map" id="apidoc.element.es5-ext.object.map">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>map
+        <span class="apidocSignatureSpan">(obj, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">map = function (obj, cb) {
+	var o = {}, thisArg = arguments[2];
+	callable(cb);
+	forEach(obj, function (value, key, obj, index) {
+		o[key] = call.call(cb, thisArg, value, key, obj, index);
+	});
+	return o;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Returns value of last defined index
+
+#### arr.lastIndex() _(es5-ext/array/#/last)_
+
+Returns last defined index of the array
+
+#### arr.<span class="apidocCodeKeywordSpan">map</span>(callback[, thisArg]) _(es5-ext/array/#/map)_
+
+[_Updated with ECMAScript 6_](http://people.mozilla.org/~jorendorff/es6-draft.html#sec-array.map).
+ES6's version of `map`, returns array of same type as the context.
+
+#### arr.remove(value[, â€¦valuen]) _(es5-ext/array/#/remove)_
+
+Remove values from the array
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.mapKeys" id="apidoc.element.es5-ext.object.mapKeys">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>mapKeys
+        <span class="apidocSignatureSpan">(obj, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mapKeys = function (obj, cb) {
+	var o = {}, thisArg = arguments[2];
+	callable(cb);
+	forEach(obj, function (value, key, obj, index) {
+		o[call.call(cb, thisArg, key, value, this, index)] = value;
+	}, obj);
+	return o;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.mixin" id="apidoc.element.es5-ext.object.mixin">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>mixin
+        <span class="apidocSignatureSpan">(target, source)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mixin = function (target, source) {
+	var error, sourceObject = Object(value(source));
+	target = Object(value(target));
+	getOwnPropertyNames(sourceObject).forEach(function (name) {
+		try {
+			defineProperty(target, name, getOwnPropertyDescriptor(source, name));
+		} catch (e) { error = e; }
+	});
+	if (typeof getOwnPropertySymbols === 'function') {
+		getOwnPropertySymbols(sourceObject).forEach(function (symbol) {
+			try {
+				defineProperty(target, symbol, getOwnPropertyDescriptor(source, symbol));
+			} catch (e) { error = e; }
+		});
+	}
+	if (error !== undefined) throw error;
+	return target;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.mixinPrototypes" id="apidoc.element.es5-ext.object.mixinPrototypes">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>mixinPrototypes
+        <span class="apidocSignatureSpan">(target, source)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mixinPrototypes = function (target, source) {
+	var error, end, define;
+	target = Object(value(target));
+	source = Object(value(source));
+	end = getPrototypeOf(target);
+	if (source === end) return target;
+	try {
+		mixin(target, source);
+	} catch (e) { error = e; }
+	source = getPrototypeOf(source);
+	define = function (name) {
+		if (hasOwnProperty.call(target, name)) return;
+		try {
+			defineProperty(target, name, getOwnPropertyDescriptor(source, name));
+		} catch (e) { error = e; }
+	};
+	while (source &amp;&amp; (source !== end)) {
+		getOwnPropertyNames(source).forEach(define);
+		source = getPrototypeOf(source);
+	}
+	if (error) throw error;
+	return target;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.normalizeOptions" id="apidoc.element.es5-ext.object.normalizeOptions">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>normalizeOptions
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">normalizeOptions = function (options) {
+	var result = create(null);
+	forEach.call(arguments, function (options) {
+		if (options == null) return;
+		process(Object(options), result);
+	});
+	return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.primitiveSet" id="apidoc.element.es5-ext.object.primitiveSet">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>primitiveSet
+        <span class="apidocSignatureSpan">(arg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">primitiveSet = function (arg) {
+	var set = create(null);
+	forEach.call(arguments, function (name) { set[name] = true; });
+	return set;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.safeTraverse" id="apidoc.element.es5-ext.object.safeTraverse">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>safeTraverse
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">safeTraverse = function (obj) {
+	var length, current = 1;
+	value(obj);
+	length = arguments.length - 1;
+	if (!length) return obj;
+	while (current &lt; length) {
+		obj = obj[arguments[current++]];
+		if (obj == null) return undefined;
+	}
+	return obj[arguments[current]];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.serialize" id="apidoc.element.es5-ext.object.serialize">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>serialize
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">serialize = function (obj) {
+	if (obj == null) return String(obj);
+	switch (typeof obj) {
+	case 'string':
+		return stringify(obj);
+	case 'number':
+	case 'boolean':
+	case 'function':
+		return String(obj);
+	case 'object':
+		if (isArray(obj)) return '[' + sparseMap(obj) + ']';
+		if (isRegExp(obj)) return String(obj);
+		if (isDate(obj)) return 'new Date(' + obj.valueOf() + ')';
+		return '{' + toArray(obj, keyValueToString) + '}';
+	default:
+		throw new TypeError("Serialization of " + String(obj) + "is unsupported");
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.setPrototypeOf" id="apidoc.element.es5-ext.object.setPrototypeOf">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>setPrototypeOf
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setPrototypeOf() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.some" id="apidoc.element.es5-ext.object.some">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>some
+        <span class="apidocSignatureSpan">(obj, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">some = function (obj, cb) {
+		var list, thisArg = arguments[2], compareFn = arguments[3];
+		obj = Object(value(obj));
+		callable(cb);
+
+		list = keys(obj);
+		if (compareFn) {
+			list.sort((typeof compareFn === 'function') ? bind.call(compareFn, obj) : undefined);
+		}
+		if (typeof method !== 'function') method = list[method];
+		return call.call(method, list, function (key, index) {
+			if (!propertyIsEnumerable.call(obj, key)) return defVal;
+			return call.call(cb, thisArg, obj[key], key, obj, index);
+		});
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.toArray" id="apidoc.element.es5-ext.object.toArray">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>toArray
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toArray = function (obj) {
+	var a = [], cb = arguments[1], thisArg = arguments[2];
+	cb = (cb == null) ? defaultCb : callable(cb);
+
+	forEach(obj, function (value, key, obj, index) {
+		a.push(call.call(cb, thisArg, value, key, this, index));
+	}, obj, arguments[3]);
+	return a;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.unserialize" id="apidoc.element.es5-ext.object.unserialize">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>unserialize
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unserialize = function (code) {
+	return (new Function('return ' + value(code)))();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.validCallable" id="apidoc.element.es5-ext.object.validCallable">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>validCallable
+        <span class="apidocSignatureSpan">(fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validCallable = function (fn) {
+	if (typeof fn !== 'function') throw new TypeError(fn + " is not a function");
+	return fn;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.validObject" id="apidoc.element.es5-ext.object.validObject">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>validObject
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validObject = function (value) {
+	if (!isObject(value)) throw new TypeError(value + " is not an Object");
+	return value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.validValue" id="apidoc.element.es5-ext.object.validValue">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>validValue
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validValue = function (value) {
+	if (value == null) throw new TypeError("Cannot use null or undefined");
+	return value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.validateArrayLike" id="apidoc.element.es5-ext.object.validateArrayLike">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>validateArrayLike
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validateArrayLike = function (obj) {
+	if (isArrayLike(obj)) return obj;
+	throw new TypeError(obj + " is not array-like value");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.validateArrayLikeObject" id="apidoc.element.es5-ext.object.validateArrayLikeObject">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>validateArrayLikeObject
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validateArrayLikeObject = function (obj) {
+	if (isObject(obj) &amp;&amp; isArrayLike(obj)) return obj;
+	throw new TypeError(obj + " is not array-like object");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.validateStringifiable" id="apidoc.element.es5-ext.object.validateStringifiable">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>validateStringifiable
+        <span class="apidocSignatureSpan">(stringifiable)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validateStringifiable = function (stringifiable) {
+	try {
+		return String(stringifiable);
+	} catch (e) {
+		throw new TypeError("Passed argument cannot be stringifed");
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.object.validateStringifiableValue" id="apidoc.element.es5-ext.object.validateStringifiableValue">
+        function <span class="apidocSignatureSpan">es5-ext.object.</span>validateStringifiableValue
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validateStringifiableValue = function (x) { return stringifiable(value(x)); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.regExp" id="apidoc.module.es5-ext.regExp">module es5-ext.regExp</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.regExp.escape" id="apidoc.element.es5-ext.regExp.escape">
+        function <span class="apidocSignatureSpan">es5-ext.regExp.</span>escape
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">escape = function (str) { return String(str).replace(re, '\\$&amp;'); }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.regExp.isRegExp" id="apidoc.element.es5-ext.regExp.isRegExp">
+        function <span class="apidocSignatureSpan">es5-ext.regExp.</span>isRegExp
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRegExp = function (x) {
+	return (x &amp;&amp; (x instanceof RegExp || (toString.call(x) === id))) || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.regExp.validRegExp" id="apidoc.element.es5-ext.regExp.validRegExp">
+        function <span class="apidocSignatureSpan">es5-ext.regExp.</span>validRegExp
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validRegExp = function (x) {
+	if (!isRegExp(x)) throw new TypeError(x + " is not a RegExp object");
+	return x;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.es5-ext.string" id="apidoc.module.es5-ext.string">module es5-ext.string</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.string.formatMethod" id="apidoc.element.es5-ext.string.formatMethod">
+        function <span class="apidocSignatureSpan">es5-ext.string.</span>formatMethod
+        <span class="apidocSignatureSpan">(fmap)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">formatMethod = function (fmap) {
+	fmap = Object(value(fmap));
+	return function (pattern) {
+		var context = value(this);
+		pattern = String(pattern);
+		return pattern.replace(/%([a-zA-Z]+)|\\([\u0000-\uffff])/g,
+			function (match, token, escape) {
+				var t, r;
+				if (escape) return escape;
+				t = token;
+				while (t &amp;&amp; !(r = fmap[t])) t = t.slice(0, -1);
+				if (!r) return match;
+				if (isCallable(r)) r = call.call(r, context);
+				return r + token.slice(t.length);
+			});
+	};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.string.fromCodePoint" id="apidoc.element.es5-ext.string.fromCodePoint">
+        function <span class="apidocSignatureSpan">es5-ext.string.</span>fromCodePoint
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromCodePoint() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.string.isString" id="apidoc.element.es5-ext.string.isString">
+        function <span class="apidocSignatureSpan">es5-ext.string.</span>isString
+        <span class="apidocSignatureSpan">(x)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isString = function (x) {
+	return (typeof x === 'string') || (x &amp;&amp; (typeof x === 'object') &amp;&amp;
+		((x instanceof String) || (toString.call(x) === id))) || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.string.randomUniq" id="apidoc.element.es5-ext.string.randomUniq">
+        function <span class="apidocSignatureSpan">es5-ext.string.</span>randomUniq
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">randomUniq = function () {
+	var str;
+	do { str = random().toString(36).slice(2); } while (generated[str]);
+	return str;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.es5-ext.string.raw" id="apidoc.element.es5-ext.string.raw">
+        function <span class="apidocSignatureSpan">es5-ext.string.</span>raw
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function raw() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
