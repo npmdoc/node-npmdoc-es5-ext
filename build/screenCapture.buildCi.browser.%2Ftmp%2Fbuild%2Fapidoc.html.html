@@ -1588,7 +1588,23 @@ aFrom('foo'); // ['f', 'o', 'o']
 	if (isIterable(iterable(target))) forOf(target, cb, arguments[2]);
 	else forEach.call(target, cb, arguments[2]);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+'use strict';
+
+var keys = require('./keys');
+
+module.exports = function (obj) {
+	var error;
+	keys(obj).<span class="apidocCodeKeywordSpan">forEach</span>(function (key) {
+		try {
+			delete this[key];
+		} catch (e) {
+			if (!error) error = e;
+		}
+	}, obj);
+	if (error !== undefined) throw error;
+...</pre></li>
     </ul>
 
 
@@ -2231,7 +2247,21 @@ Returns number of days of date's month
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function create() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+module.exports = (function () {
+	var SubArray;
+
+	if (!setPrototypeOf) return null;
+	SubArray = function () { Array.apply(this, arguments); };
+	setPrototypeOf(SubArray, Array);
+	SubArray.prototype = Object.<span class="apidocCodeKeywordSpan">create</span>(Array.prototype, {
+		constructor: { value: SubArray, enumerable: false, writable: true,
+			configurable: true }
+	});
+	return SubArray;
+}());
+...</pre></li>
     </ul>
 
 
@@ -2306,7 +2336,23 @@ Returns number of days of date's month
 			return call.call(cb, thisArg, obj[key], key, obj, index);
 		});
 	}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+	}
+	return true;
+};
+
+eqObj = function (a, b, recMap) {
+	var k1 = keys(a), k2 = keys(b);
+	if (k1.length !== k2.length) return false;
+	return k1.<span class="apidocCodeKeywordSpan">every</span>(function (key) {
+		if (!propertyIsEnumerable.call(b, key)) return false;
+		return eqVal(a[key], b[key], recMap);
+	});
+};
+
+eqVal = function (a, b, recMap) {
+	var i, eqX, c1, c2;
+...</pre></li>
     </ul>
 
 
@@ -2481,7 +2527,23 @@ As with native ones most methods are generic and can be run on any type of objec
 			return call.call(cb, thisArg, obj[key], key, obj, index);
 		});
 	}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+'use strict';
+
+var keys = require('./keys');
+
+module.exports = function (obj) {
+	var error;
+	keys(obj).<span class="apidocCodeKeywordSpan">forEach</span>(function (key) {
+		try {
+			delete this[key];
+		} catch (e) {
+			if (!error) error = e;
+		}
+	}, obj);
+	if (error !== undefined) throw error;
+...</pre></li>
     </ul>
 
 
