@@ -1,4 +1,7 @@
-# api documentation for  [es5-ext (v0.10.15)](https://github.com/medikoo/es5-ext#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-es5-ext.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-es5-ext) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-es5-ext.svg)](https://travis-ci.org/npmdoc/node-npmdoc-es5-ext)
+# npmdoc-es5-ext
+
+#### api documentation for  [es5-ext (v0.10.15)](https://github.com/medikoo/es5-ext#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-es5-ext.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-es5-ext) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-es5-ext.svg)](https://travis-ci.org/npmdoc/node-npmdoc-es5-ext)
+
 #### ECMAScript extensions and shims
 
 [![NPM](https://nodei.co/npm/es5-ext.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/es5-ext)
@@ -77,7 +80,8 @@
         "lint-console": "node node_modules/xlint/bin/xlint --linter=node_modules/xlint-jslint-medikoo/index.js --watch",
         "test": "node ./node_modules/tad/bin/tad"
     },
-    "version": "0.10.15"
+    "version": "0.10.15",
+    "bin": {}
 }
 ```
 
